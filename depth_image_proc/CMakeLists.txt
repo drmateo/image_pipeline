@@ -7,6 +7,8 @@ catkin_package(
     INCLUDE_DIRS include
     LIBRARIES ${PROJECT_NAME})
 
+add_compile_options(-std=c++11)
+
 find_package(Boost REQUIRED)
 find_package(Eigen3 QUIET)
 if(NOT EIGEN3_FOUND)

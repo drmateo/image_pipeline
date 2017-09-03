@@ -17,6 +17,8 @@ catkin_package(
   LIBRARIES ${PROJECT_NAME}
 )
 
+add_compile_options(-std=c++11)
+
 include_directories(include ${catkin_INCLUDE_DIRS} ${OpenCV_INCLUDE_DIRS})
 
 # Nodelet library

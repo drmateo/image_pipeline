@@ -13,6 +13,8 @@ catkin_package(
   LIBRARIES ${PROJECT_NAME}
 )
 
+add_compile_options(-std=c++11)
+
 include_directories(include)
 
 find_package(OpenCV REQUIRED)
